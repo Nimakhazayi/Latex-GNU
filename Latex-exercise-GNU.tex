@@ -1,0 +1,113 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{paralist}
+\usepackage{mathtools, amssymb,amsthm}
+\usepackage{array}
+\begin{document}
+\begin{titlepage}
+  \centering
+  \includegraphics[width=0.5\linewidth]{./Logo.jpeg}\\[1cm]
+  \scshape\LARGE Excersise 1\\[2cm]
+  \today\\[4cm]
+  \scshape\Large Nima Khazayi\\[1cm]
+    \scshape\Large Dr. Tabatabei\\[1cm]
+  \scshape\large University of Guilan\\[1cm]
+\end{titlepage}
+\section{Calculus}
+\subsection{Differentiation}
+\text{The curve $y = f(x)$ has a slope at point $x = a$ given by the derivative of $f$ with respect to $x$ at $a$:}
+	\begin{equation}
+		f^{'}(a) = \frac{df}{dx}|_a = \lim_{\Delta x \to 0}\frac{f(a+\Delta x) - f(a)}{\Delta x}.
+	\end{equation}
+ 
+\text{A few particular derivatives are:}\\
+
+\hspace{2cm}$f(x) = ax^n$ \hspace{2cm} $f^{'}(x) = anx^{n-1}$\\
+
+\hspace{2cm}$f(x) = e^{\lambda x}$ \hspace{2.05cm} $f^{'}(x) = \lambda e^{\lambda x}$\\
+
+\hspace{2cm}$f(x) = u(x)v(x)$ \hspace{1.2cm} $f^{'}(x) = u^{'}(x)v(x) | u(x)v^{'}(x)$\\
+
+\hspace{2cm}$f(x) - u(x)/v(x)$ \hspace{1.2cm} $f^{'}(x) - [u^{'}(x)v(x) - u(x)v^{'}(x)]/v^2(x).$\\
+
+
+
+\subsection{Integration}
+Integration is the opposite of differentiation:
+\begin{equation}
+	\int^{b}_{a} f^{\prime}(x)dx = [f(x)]^{b}_{a} = f(b) - f(a) \hspace{0.5cm} or \hspace{0.5cm} \int f^{\prime}(x)dx = f(x)
+\end{equation}\\
+and it may also be seen as giving the area under a curve - so the integral $\int^{b}_{a}f(x)dx$ gives the area under the curve $y = f(x)$ between $x = a$ and $x = b$. Some specific integrals are:
+\begin{center}
+$\int x^n dx = x^{n+1}/(n+1)$ for $n \neq -1$\hspace{1cm}$\int x^{-1}dx=ln x$\\
+
+$\int e^{\lambda x}dx = e^{\lambda x} /\lambda$\hspace{1cm} $\int u(x)v^{\prime}(x)dx = [u(x)v(x)]-\int u^{\prime}(x)v(x)dx$
+\end{center}
+
+\section{Lines and Circles}
+\text{The vector equation of a straight line in three-dimensional space is}\\
+\begin{equation}
+\underline{x}\hspace{5mm}\underline{a} + v\underline{b}\hspace{2mm}\text{with} \hspace{2mm}u \in (-\infty,\infty)\hspace{2mm}\text{a real scalar.}
+\end{equation}
+\newpage
+
+\begin{enumerate}
+\item Identify the set of variables, the objective function, the set of constraints, the sign confitions and the solution set of the following Mathematical Programming problem.
+\begin{enumerate}
+\item Min x + y \\ s.t. $2x + y \leq 3$ \\ $x, y \geq 0$
+\item Max $x^2+y^2+z^2$\\ s.t. $x+y\leq 6$\\ $x+3y \leq 8$\\$x+2y+z\leq 20$\\ $x,y \geq 0$
+\end{enumerate}
+
+\item Draw two level curves for each of the following functions.\\
+\begin{inparaenum}
+\item $f(x,y) = 3x - 2y$\hspace{0.7cm}
+\item $g(x,y) = x^2 + y^2$\hspace{0.7cm}
+\item $h(x,y) = x + 5y$
+\end{inparaenum}
+
+\item Draw the following sets and say if they are closed and/or bounded sets.
+\begin{enumerate}
+\item $S = \{(x,y)\in \mathbb{R}^2 / x+y \leq 6, 2x+y \geq 3, x \geq 0, y \geq 0\}$
+\item $S = \{(x,y) \in \mathbb{R}^2 / x+y \leq 6, x+2y \geq 3, y \geq 0 \}$
+\item $S = \{(x,y) \in \mathbb{R}^2 / x^2 + y^2 \leq 9 \}$
+\end{enumerate}
+
+\item Solve the following problems graphically.\\[0.5cm]
+
+\centering
+\begin{tabular}{|ll|l|}
+\multicolumn{2}{|l|}{$ I)Max. \hspace{0.3cm}x+y \hspace{1cm} II)Max.\hspace{0.2cm} 2x+3y$} & $III)Max. \hspace{0.2cm} x-y$  \\[0.2cm]
+
+\multicolumn{2}{|l|}{$ \hspace{0.5cm}s.t. \hspace{0.2cm} 2x+y \geq 3 \hspace{1cm} s.t. \hspace{0.2cm} x+2y \leq 10$} & $\hspace{0.5cm}s.t. \hspace{0.2cm} 3x+2y \leq 5$ \\[0.2cm]
+
+\multicolumn{2}{|l|}{$ \hspace{0.5cm} x + 2y\geq 3 \hspace{1.7cm} x \geq 20$} & $\hspace{0.5cm}x \geq 0, y \geq 0$ \\[0.2cm]
+
+\multicolumn{2}{|l|}{$ \hspace{0.5cm} x + y\leq 6 \hspace{1.9cm} x \geq 0, y \geq 0$} & \\[0.2cm]
+
+\multicolumn{2}{|l|}{$ \hspace{0.5cm} x \geq 0, y \geq 0 $} & \\ \hline
+\end{tabular}
+
+\begin{tabular}{|ll|l|}
+\hline
+\multicolumn{2}{|l|}{$ IV)Max. \hspace{0.3cm}x^2+y^2 \hspace{1cm} V)Max.\hspace{0.2cm} x^2 + y^2$} & $VI)Max. \hspace{0.2cm} x+y$  \\[0.2cm]
+
+\multicolumn{2}{|l|}{$ \hspace{0.6cm}s.t. \hspace{0.2cm} x+y =1 \hspace{1.6cm} s.t. \hspace{0.2cm} x+y = 1$} & $\hspace{0.6cm}s.t. \hspace{0.2cm} x+4y \geq 5$ \\[0.2cm]
+
+\multicolumn{2}{|l|}{} & $\hspace{0.6cm}x \geq 0, y \geq 0$ \\ \hline
+
+\end{tabular}
+\end{enumerate}
+
+\begin{center}
+\includegraphics[scale=0.5]{./1.png}
+\end{center}
+
+
+
+
+
+
+
+
+\end{document}
